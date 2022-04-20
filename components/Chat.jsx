@@ -1,12 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-interface Props {
-  id: string
-  chatPartner: string
-}
-
-function Chat({ id, chatPartner }: Props) {
+function Chat({ id, chatPartner }) {
   const router = useRouter()
 
   const redirect = (id) => {
